@@ -24,6 +24,12 @@ public class ModItems {
     public static final DeferredItem<Item> IRON_SWORD_BLADE = ITEMS.register("iron_sword_blade",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> LEATHER_STRIP = ITEMS.register("leather_strip",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> LEATHER_STRAP = ITEMS.register("leather_strap",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

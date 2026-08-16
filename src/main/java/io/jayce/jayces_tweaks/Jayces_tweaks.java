@@ -75,6 +75,8 @@ public class Jayces_tweaks {
             event.accept(ModItems.IRON_SHOVEL_HEAD);
             event.accept(ModItems.IRON_HOE_HEAD);
             event.accept(ModItems.IRON_SWORD_BLADE);
+            event.accept(ModItems.LEATHER_STRIP);
+            event.accept(ModItems.LEATHER_STRAP);
         }
     }
 

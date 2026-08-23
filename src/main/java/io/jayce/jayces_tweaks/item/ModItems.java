@@ -30,6 +30,21 @@ public class ModItems {
     public static final DeferredItem<Item> LEATHER_STRAP = ITEMS.register("leather_strap",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> DIAMOND_PICKAXE_HEAD = ITEMS.register("diamond_pickaxe_head",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DIAMOND_AXE_HEAD = ITEMS.register("diamond_axe_head",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DIAMOND_SHOVEL_HEAD = ITEMS.register("diamond_shovel_head",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DIAMOND_HOE_HEAD = ITEMS.register("diamond_hoe_head",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DIAMOND_SWORD_BLADE = ITEMS.register("diamond_sword_blade",
+            () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

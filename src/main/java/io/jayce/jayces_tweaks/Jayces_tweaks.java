@@ -70,13 +70,18 @@ public class Jayces_tweaks {
     // Add the tool components to the ingredients tab.
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.IRON_PICKAXE_HEAD);
-            event.accept(ModItems.IRON_AXE_HEAD);
-            event.accept(ModItems.IRON_SHOVEL_HEAD);
-            event.accept(ModItems.IRON_HOE_HEAD);
-            event.accept(ModItems.IRON_SWORD_BLADE);
             event.accept(ModItems.LEATHER_STRIP);
             event.accept(ModItems.LEATHER_STRAP);
+            event.accept(ModItems.IRON_AXE_HEAD);
+            event.accept(ModItems.IRON_PICKAXE_HEAD);
+            event.accept(ModItems.IRON_HOE_HEAD);
+            event.accept(ModItems.IRON_SHOVEL_HEAD);
+            event.accept(ModItems.IRON_SWORD_BLADE);
+            event.accept(ModItems.DIAMOND_AXE_HEAD);
+            event.accept(ModItems.DIAMOND_PICKAXE_HEAD);
+            event.accept(ModItems.DIAMOND_HOE_HEAD);
+            event.accept(ModItems.DIAMOND_SHOVEL_HEAD);
+            event.accept(ModItems.DIAMOND_SWORD_BLADE);
         }
     }
 

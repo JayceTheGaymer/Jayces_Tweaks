@@ -10,6 +10,8 @@ group = mod_group_id
 
 repositories {
     mavenLocal()
+    maven { url = 'https://maven.blamejared.com' }
+    maven { url = 'https://cursemaven.com' }
 }
 
 base {
@@ -96,11 +98,9 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 
 dependencies {
-    // Example mod dependency with JEI
-    // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
-    // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
-    // compileOnly "mezz.jei:jei-${mc_version}-forge-api:${jei_version}"
-    // runtimeOnly "mezz.jei:jei-${mc_version}-forge:${jei_version}"
+    // Compile-time only, for the JER mob tooltip mixin. Both are optional at runtime.
+    compileOnly "mezz.jei:jei-${minecraft_version}-neoforge:${jei_version}"
+    compileOnly "curse.maven:just-enough-resources-jer-240630:${jer_file_id}"
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar
